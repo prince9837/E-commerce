@@ -1,16 +1,17 @@
-import React, { useContext, useState } from "react";
-import AppLayout from "./Applayout";
+import React, { useContext} from "react";
 import { Link, NavLink } from "react-router-dom";
-import { IoHomeOutline } from "react-icons/io5";
+import { IoHomeOutline, IoReorderThreeOutline } from "react-icons/io5";
 import { GiShop } from "react-icons/gi";
 import { IoIosContact, IoMdBook } from "react-icons/io";
 import { BsCart2 } from "react-icons/bs";
 import { ContextCart } from "../Context/CartContext";
+import ResponsiveLinks from "../ui/ResponsiveLinks";
 
 const Header = () => {
+    const { setShowNavlinks } = useContext(ContextCart);
+
 
   const {cartCount} = useContext(ContextCart)
-
   const navLinks = [
     { title: "Home", path: "/", icon: <IoHomeOutline /> },
     { title: "Products", path: "/products", icon: <GiShop /> },
@@ -18,10 +19,14 @@ const Header = () => {
     { title: "Contact", path: "/contact", icon: <IoIosContact /> },
   ];
 
-  return (
+  return (<>
     <header className="flex items-center justify-between xl:px-20 xl:py-4 shadow-lg px-2 py-2">
-      <Link to="/" className="text-2xl font-bold">
-        <span className="text-green-600">Shop</span>verse
+      <div className="text-2xl font-bold xl:hidden flex gap-2 items-center justify-center cursor-pointer">
+        <span className="text-green-600">Shop</span>verse<IoReorderThreeOutline onClick={()=>setShowNavlinks(true)} className="xl:hidden flex text-4xl mt-2" />
+      </div>
+
+      <Link to="/" className="text-2xl font-bold xl:flex gap-2 items-center justify-center cursor-pointer hidden">
+        <span className="text-green-600">Shop</span>verse<IoReorderThreeOutline className="xl:hidden flex text-4xl mt-2" />
       </Link>
 
       <nav>
@@ -51,11 +56,13 @@ const Header = () => {
             {cartCount}
           </div>
         </Link>
-        <button className="bg-green-500 px-4 py-1 text-lg rounded text-white cursor-pointer hover:bg-green-600">
+        <button className="bg-green-500 px-2 xl:px-4 py-1 xl:text-lg rounded text-white cursor-pointer hover:bg-green-600">
           Sigh In
         </button>
       </div>
     </header>
+    <ResponsiveLinks />
+    </>
   );
 };
 

@@ -10,8 +10,8 @@ const ProductCardDetail = ({product }) => {
   const {addToCart} = useContext(ContextCart)
 
   return (
-    <div className="flex gap-20 w-[1000px] mt-10">
-      <img src={images?.[0]} alt="" width={400} />
+    <div className="xl:flex xl:gap-20 xl:w-[1000px] gap-10 mt-10 px-10 py-5">
+      <img src={images?.[0]} alt="" xl:width={400} width={300} className="rounded-lg"/>
 
       <div className="flex flex-col gap-3">
         <h2 className="font-bold text-xl">{title}</h2>
