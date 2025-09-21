@@ -32,7 +32,7 @@ const Home = () => {
               <h1 className="xl:text-4xl text-3xl text-green-400 font-bold">
                 Everything You love, Delivered to your door
               </h1>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Discover a wide range of premium-quality products designed to
                 make your life easier, smarter, and...{" "}
                 <span className="xl:flex hidden">
