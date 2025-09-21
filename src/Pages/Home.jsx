@@ -24,7 +24,7 @@ const Home = () => {
           <div className="xl:w-screen xl:flex w-screen items-center xl:gap-30  bg-[#d3e2b1]">
             <img
               className="w-[500px] h-[500px]"
-              src="./images/purse.png"
+              src="https://img.freepik.com/free-vector/flat-fabric-bag-illustrated_23-2149018827.jpg?t=st=1758479296~exp=1758482896~hmac=78138ec71b0f78bbff74403c185ff01182598b18ab81a38c53bc3feeeedb2e28&w=1480"
               alt=""
             />
 
