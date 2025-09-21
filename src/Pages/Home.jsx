@@ -29,7 +29,7 @@ const Home = () => {
             />
 
             <div className="flex gap-4 flex-col xl:w-[50%] w-full px-5 pb-5">
-              <h1 className="xl:text-4xl text-3xl text-green-500 font-bold">
+              <h1 className="xl:text-4xl text-3xl text-green-400 font-bold">
                 Everything You love, Delivered to your door
               </h1>
               <p className="text-gray-600">
