@@ -1,10 +1,9 @@
-import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Products from './Pages/Products';
-import AppLayout from './components/layout/Applayout';
+import AppLayout from './components/layout/AppLayout';
 import Cart from './Pages/Cart';
 import ProductDetail from './Pages/ProductDetail';
 import Error from './Pages/Error';

@@ -21,18 +21,18 @@ const Home = () => {
     <>
       <section className="flex items-center py-10 flex-col">
         <div className="w-screen flex flex-col gap-5">
-          <div className="xl:w-screen xl:flex w-screen items-center xl:gap-30  bg-[#d3e2b1]">
+          <div className="xl:w-screen xl:flex w-screen items-center xl:gap-30  bg-[#4e926b]">
             <img
-              className="w-[500px] h-[500px]"
-              src="./images/purse.png"
+              className="w-[500px] h-[300px] xl:h-[500px]"
+              src="https://img.freepik.com/free-vector/flat-fabric-bag-illustrated_23-2149018827.jpg?t=st=1758479296~exp=1758482896~hmac=78138ec71b0f78bbff74403c185ff01182598b18ab81a38c53bc3feeeedb2e28&w=1480"
               alt=""
             />
 
             <div className="flex gap-4 flex-col xl:w-[50%] w-full px-5 pb-5">
-              <h1 className="xl:text-4xl text-3xl text-green-500 font-bold">
+              <h1 className="xl:text-4xl text-3xl text-green-400 font-bold">
                 Everything You love, Delivered to your door
               </h1>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Discover a wide range of premium-quality products designed to
                 make your life easier, smarter, and...{" "}
                 <span className="xl:flex hidden">

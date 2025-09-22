@@ -11,7 +11,7 @@ const Cart = () => {
   // console.log(cart[0].title)
   return (
     <div className="w-[374px]">
-      <div className="xl:flex hidden xl:w-screen items-center justify-between px-10 py-3 text-2xl font-bold shadow-green-200 shadow-lg">
+      <div className="xl:flex hidden xl:w-screen items-center justify-between px-10 py-3 text-2xl font-bold">
         <p className="flex gap-2 items-center">Image<MdOutlineImage /></p>
         <p className="flex gap-2 items-center">Items<GiClothes /></p>
         <p className="flex gap-2 items-center">Quantity<MdProductionQuantityLimits /></p>
@@ -56,7 +56,7 @@ const Cart = () => {
                   </div>
                   <p className="text-2xl font-bold mt-2">${ele?.price}</p>
                   <button
-                    className="text-red-500 text-2xl font-semibold cursor-pointer flex gap-2 items-center mt-2 border-2 rounded-lg px-5 py-2"
+                    className="text-red-500 text-2xl font-semibold cursor-pointer flex gap-2 items-center mt-2 border-2 rounded-lg px-5 py-2 duration-300"
                     onClick={() => removeFromCart(ele.id)}
                   >
                     Remove <AiOutlineCloseCircle />
