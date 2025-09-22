@@ -23,7 +23,11 @@ const Home = () => {
         <div className="w-screen flex flex-col gap-5">
           <div className="xl:w-screen xl:flex w-screen items-center xl:gap-30  bg-[#4e926b]">
             <img
+<<<<<<< HEAD
               className="w-[500px] h-[300px] xl:h-[500px]"
+=======
+              className="w-[500px] h-[500px]"
+>>>>>>> 2f850bcbcdc844adb59f19cfcbb3732f60b42ff0
               src="https://img.freepik.com/free-vector/flat-fabric-bag-illustrated_23-2149018827.jpg?t=st=1758479296~exp=1758482896~hmac=78138ec71b0f78bbff74403c185ff01182598b18ab81a38c53bc3feeeedb2e28&w=1480"
               alt=""
             />
