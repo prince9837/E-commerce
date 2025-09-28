@@ -6,9 +6,11 @@ import { IoIosContact, IoMdBook } from "react-icons/io";
 import { BsCart2 } from "react-icons/bs";
 import { ContextCart } from "../Context/CartContext";
 import ResponsiveLinks from "../ui/ResponsiveLinks";
+import Form from "../../Pages/Form";
 
 const Header = () => {
     const { setShowNavlinks } = useContext(ContextCart);
+    const { setShowForm } = useContext(ContextCart);
 
 
   const {cartCount} = useContext(ContextCart)
@@ -56,9 +58,9 @@ const Header = () => {
             {cartCount}
           </div>
         </Link>
-        <button className="bg-green-500 px-2 xl:px-4 py-1 xl:text-lg rounded text-white cursor-pointer hover:bg-green-600">
+        <Link to="/form" onClick={()=>setShowForm(true)} className="bg-green-500 px-2 xl:px-4 py-1 xl:text-lg rounded text-white cursor-pointer hover:bg-green-600">
           Sigh In
-        </button>
+        </Link>
       </div>
     </header>
     <ResponsiveLinks />

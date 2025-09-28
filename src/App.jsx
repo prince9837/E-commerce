@@ -7,6 +7,7 @@ import AppLayout from './components/layout/AppLayout';
 import Cart from './Pages/Cart';
 import ProductDetail from './Pages/ProductDetail';
 import Error from './Pages/Error';
+import Form from './Pages/Form';
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
         { path: "/products", element: <Products /> },
         { path: "/products/:productId", element: <ProductDetail /> },
         { path: "/cart", element: <Cart /> },
+        { path: "/form", element: <Form /> },
         { path: "*", element: <Error /> },
       ],
     },

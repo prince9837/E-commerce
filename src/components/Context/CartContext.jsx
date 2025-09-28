@@ -6,6 +6,7 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [count, setCount] = useState(1);
   const [showNavlinks, setShowNavlinks] = useState(false)
+  const [showForm, setShowForm] = useState(false)
 
   const addToCart = (product) => {
     setCart((prev) => {
@@ -29,7 +30,9 @@ export const CartProvider = ({ children }) => {
     count,
     setCount,
     showNavlinks,
-    setShowNavlinks
+    setShowNavlinks,
+    showForm,
+    setShowForm
   };
 
   return <ContextCart.Provider value={value}>{children}</ContextCart.Provider>;

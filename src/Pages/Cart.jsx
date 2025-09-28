@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ContextCart } from "../components/Context/CartContext.jsx";
-import { AiOutlineCloseCircle, AiTwotoneCloseCircle } from "react-icons/ai";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 import { MdOutlineImage, MdProductionQuantityLimits } from "react-icons/md";
 import { LuIndianRupee } from "react-icons/lu";
 import { CiFaceSmile } from "react-icons/ci";
@@ -11,7 +11,7 @@ const Cart = () => {
   // console.log(cart[0].title)
   return (
     <div className="w-[374px]">
-      <div className="xl:flex hidden xl:w-screen items-center justify-between px-10 py-3 text-2xl font-bold">
+      <div className="xl:flex hidden xl:w-screen items-center justify-between px-10 py-3 text-2xl font-bold shadow">
         <p className="flex gap-2 items-center">Image<MdOutlineImage /></p>
         <p className="flex gap-2 items-center">Items<GiClothes /></p>
         <p className="flex gap-2 items-center">Quantity<MdProductionQuantityLimits /></p>

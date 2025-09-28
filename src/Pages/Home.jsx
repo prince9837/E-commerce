@@ -50,7 +50,7 @@ const Home = () => {
             </div>
           </div>
 
-          <blockquote class="xl:text-4xl text-3xl font-semibold text-gray-900 italic dark:text-white px-5 mt-3">
+          <blockquote class="xl:text-4xl text-3xl font-semibold text-gray-900 italic dark:text-white px-10 xl:px-50 mt-3">
             <span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-green-500">
               <span class="relative text-white dark:text-white-950">
                 Categories
@@ -58,7 +58,7 @@ const Home = () => {
             </span>
           </blockquote>
 
-          <div className="flex items-center gap-8 xl:px-5 xl:py-5 px-2 py-2 w-screen flex-wrap">
+          <div className="flex items-center gap-8 xl:px-5 xl:py-5 px-6 py-2 w-screen flex-wrap xl:justify-center">
             {categoryData.map((ele) => {
               return (
                 <CategoryCard key={ele.id} name={ele.name} img={ele.image} />
